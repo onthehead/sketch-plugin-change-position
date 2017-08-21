@@ -1,0 +1,31 @@
+{
+	"name": "Change Position",
+	"description": "Change the position of selcted layers",
+	"author": "Seiji Miyazawa",
+	"authorEmail": "onthehead@gmail.com",
+	"version": 1.0,
+	"identifier": "com.onthehead.change-position",
+	"compatibleVersion": 45,
+	"commands": [
+		{
+			"script": "action.js",
+			"identifier": "all-move",
+			"handler": "allMove",
+			"name": "Move All Selection",
+			"shortcut": "control command c"
+		}, {
+			"script": "action.js",
+			"identifier": "all-dup",
+			"handler": "allDup",
+			"name": "Duplicate All Selection",
+			"shortcut": "control command option c"
+		}
+	],
+	"menu": {
+		"title": "Change Position",
+		"items": [
+			"all-move",
+			"all-dup"
+		]
+	}
+}
